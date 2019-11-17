@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2CA1072381BB150034949B /* justin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA0FC2381BB150034949B /* justin.mp4 */; };
+		0D2CA1082381BB150034949B /* t2music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA0FD2381BB150034949B /* t2music-loop.mp3 */; };
+		0D2CA1092381BB150034949B /* purple.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA0FE2381BB150034949B /* purple.mp4 */; };
+		0D2CA10A2381BB150034949B /* template2.nyxproj.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA0FF2381BB150034949B /* template2.nyxproj.xml */; };
+		0D2CA10C2381BB150034949B /* template2.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1012381BB150034949B /* template2.js */; };
+		0D2CA10D2381BB150034949B /* countdown.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1022381BB150034949B /* countdown.mp4 */; };
+		0D2CA10E2381BB150034949B /* piano.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1032381BB150034949B /* piano.mp4 */; };
+		0D2CA10F2381BB150034949B /* redlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1042381BB150034949B /* redlights.mp4 */; };
+		0D2CA11A2381BD040034949B /* t1music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1132381BD040034949B /* t1music-loop.mp3 */; };
+		0D2CA11B2381BD040034949B /* purple1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1142381BD040034949B /* purple1.mp4 */; };
+		0D2CA11C2381BD040034949B /* katy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1152381BD040034949B /* katy.mp4 */; };
+		0D2CA11D2381BD040034949B /* template1.nyxproj.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1162381BD040034949B /* template1.nyxproj.xml */; };
+		0D2CA11E2381BD040034949B /* template1.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1172381BD040034949B /* template1.js */; };
+		0D2CA1202381BD040034949B /* bluelight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CA1192381BD040034949B /* bluelight.mp4 */; };
 		0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990812380C56100511BF3 /* AppDelegate.swift */; };
 		0D4990842380C56100511BF3 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990832380C56100511BF3 /* FilterController.swift */; };
 		0D4990892380C56100511BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990872380C56100511BF3 /* Main.storyboard */; };
@@ -50,13 +64,20 @@
 		0D4990EC2380CA1600511BF3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990EB2380CA1600511BF3 /* CoreServices.framework */; };
 		0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990EE2380CA8400511BF3 /* hypno_Video.mm */; };
 		0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990F02380CA8400511BF3 /* hypno_Platform.mm */; };
+		0D78483223819FE4005B5277 /* MusicTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78483123819FE4005B5277 /* MusicTableController.swift */; };
+		0D78483C2381B7CB005B5277 /* guitar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D7848362381B7CB005B5277 /* guitar.mp4 */; };
+		0D78483D2381B7CB005B5277 /* t3music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D7848372381B7CB005B5277 /* t3music-loop.mp3 */; };
+		0D78483E2381B7CB005B5277 /* fractal.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0D7848382381B7CB005B5277 /* fractal.mov */; };
+		0D78483F2381B7CB005B5277 /* template3.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D7848392381B7CB005B5277 /* template3.js */; };
+		0D7848402381B7CB005B5277 /* crowd.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0D78483A2381B7CB005B5277 /* crowd.mov */; };
+		0D7848412381B7CB005B5277 /* template3.nyxproj.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0D78483B2381B7CB005B5277 /* template3.nyxproj.xml */; };
 		0D7BAE7C23810D34000AD21B /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7BAE7B23810D34000AD21B /* libhypno.a */; };
 		0D7BAE7E23810D40000AD21B /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7BAE7D23810D40000AD21B /* libhypno.a */; };
 		0D9BC3F023811284005D8DFF /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC3EF23811284005D8DFF /* RecordController.swift */; };
 		0D9BC3F623811DEB005D8DFF /* warp.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F123811DEB005D8DFF /* warp.cikernel */; };
 		0D9BC3F723811DEB005D8DFF /* hypno-logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */; };
 		0D9BC3F823811DEB005D8DFF /* light-leaks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */; };
-		0D9BC3F923811DEB005D8DFF /* music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */; };
+		0D9BC3F923811DEB005D8DFF /* t0music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F423811DEB005D8DFF /* t0music-loop.mp3 */; };
 		0D9BC3FA23811DEB005D8DFF /* air-demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F523811DEB005D8DFF /* air-demo.js */; };
 		0D9BC3FC23812205005D8DFF /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3FB23811FE4005D8DFF /* video.mp4 */; };
 		0D9BC3FE238135D2005D8DFF /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */; };
@@ -71,6 +92,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2CA0FC2381BB150034949B /* justin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = justin.mp4; sourceTree = "<group>"; };
+		0D2CA0FD2381BB150034949B /* t2music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t2music-loop.mp3"; sourceTree = "<group>"; };
+		0D2CA0FE2381BB150034949B /* purple.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purple.mp4; sourceTree = "<group>"; };
+		0D2CA0FF2381BB150034949B /* template2.nyxproj.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template2.nyxproj.xml; sourceTree = "<group>"; };
+		0D2CA1012381BB150034949B /* template2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = template2.js; sourceTree = "<group>"; };
+		0D2CA1022381BB150034949B /* countdown.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = countdown.mp4; sourceTree = "<group>"; };
+		0D2CA1032381BB150034949B /* piano.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = piano.mp4; sourceTree = "<group>"; };
+		0D2CA1042381BB150034949B /* redlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = redlights.mp4; sourceTree = "<group>"; };
+		0D2CA1132381BD040034949B /* t1music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t1music-loop.mp3"; sourceTree = "<group>"; };
+		0D2CA1142381BD040034949B /* purple1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purple1.mp4; sourceTree = "<group>"; };
+		0D2CA1152381BD040034949B /* katy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = katy.mp4; sourceTree = "<group>"; };
+		0D2CA1162381BD040034949B /* template1.nyxproj.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template1.nyxproj.xml; sourceTree = "<group>"; };
+		0D2CA1172381BD040034949B /* template1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = template1.js; sourceTree = "<group>"; };
+		0D2CA1192381BD040034949B /* bluelight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bluelight.mp4; sourceTree = "<group>"; };
 		0D49907E2380C56100511BF3 /* Cordfm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cordfm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4990812380C56100511BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4990832380C56100511BF3 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
@@ -123,13 +158,20 @@
 		0D4990EF2380CA8400511BF3 /* hypno_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Video.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Video.h"; sourceTree = "<group>"; };
 		0D4990F02380CA8400511BF3 /* hypno_Platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = hypno_Platform.mm; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.mm"; sourceTree = "<group>"; };
 		0D4990F12380CA8400511BF3 /* hypno_Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Platform.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.h"; sourceTree = "<group>"; };
+		0D78483123819FE4005B5277 /* MusicTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableController.swift; sourceTree = "<group>"; };
+		0D7848362381B7CB005B5277 /* guitar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.mp4; sourceTree = "<group>"; };
+		0D7848372381B7CB005B5277 /* t3music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t3music-loop.mp3"; sourceTree = "<group>"; };
+		0D7848382381B7CB005B5277 /* fractal.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = fractal.mov; sourceTree = "<group>"; };
+		0D7848392381B7CB005B5277 /* template3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = template3.js; sourceTree = "<group>"; };
+		0D78483A2381B7CB005B5277 /* crowd.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = crowd.mov; sourceTree = "<group>"; };
+		0D78483B2381B7CB005B5277 /* template3.nyxproj.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = template3.nyxproj.xml; sourceTree = "<group>"; };
 		0D7BAE7B23810D34000AD21B /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhypno.a; path = Hypno/libhypno.a; sourceTree = "<group>"; };
 		0D7BAE7D23810D40000AD21B /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhypno.a; sourceTree = "<group>"; };
 		0D9BC3EF23811284005D8DFF /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
 		0D9BC3F123811DEB005D8DFF /* warp.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warp.cikernel; sourceTree = "<group>"; };
 		0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hypno-logo.mp4"; sourceTree = "<group>"; };
 		0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "light-leaks.mp4"; sourceTree = "<group>"; };
-		0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-loop.mp3"; sourceTree = "<group>"; };
+		0D9BC3F423811DEB005D8DFF /* t0music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t0music-loop.mp3"; sourceTree = "<group>"; };
 		0D9BC3F523811DEB005D8DFF /* air-demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "air-demo.js"; sourceTree = "<group>"; };
 		0D9BC3FB23811FE4005D8DFF /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +204,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2CA0FA2381B8DC0034949B /* template0 */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BC3FB23811FE4005D8DFF /* video.mp4 */,
+				0D9BC3F523811DEB005D8DFF /* air-demo.js */,
+				0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */,
+				0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */,
+				0D9BC3F423811DEB005D8DFF /* t0music-loop.mp3 */,
+				0D9BC3F123811DEB005D8DFF /* warp.cikernel */,
+			);
+			path = template0;
+			sourceTree = "<group>";
+		};
+		0D2CA0FB2381BB150034949B /* template2 */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CA0FC2381BB150034949B /* justin.mp4 */,
+				0D2CA0FD2381BB150034949B /* t2music-loop.mp3 */,
+				0D2CA0FE2381BB150034949B /* purple.mp4 */,
+				0D2CA0FF2381BB150034949B /* template2.nyxproj.xml */,
+				0D2CA1012381BB150034949B /* template2.js */,
+				0D2CA1022381BB150034949B /* countdown.mp4 */,
+				0D2CA1032381BB150034949B /* piano.mp4 */,
+				0D2CA1042381BB150034949B /* redlights.mp4 */,
+			);
+			path = template2;
+			sourceTree = "<group>";
+		};
+		0D2CA1122381BD040034949B /* template1 */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CA1132381BD040034949B /* t1music-loop.mp3 */,
+				0D2CA1142381BD040034949B /* purple1.mp4 */,
+				0D2CA1152381BD040034949B /* katy.mp4 */,
+				0D2CA1162381BD040034949B /* template1.nyxproj.xml */,
+				0D2CA1172381BD040034949B /* template1.js */,
+				0D2CA1192381BD040034949B /* bluelight.mp4 */,
+			);
+			path = template1;
+			sourceTree = "<group>";
+		};
 		0D4990752380C56100511BF3 = {
 			isa = PBXGroup;
 			children = (
@@ -184,21 +267,19 @@
 		0D4990802380C56100511BF3 /* Cordfm */ = {
 			isa = PBXGroup;
 			children = (
+				0D2CA1122381BD040034949B /* template1 */,
+				0D2CA0FB2381BB150034949B /* template2 */,
+				0D2CA0FA2381B8DC0034949B /* template0 */,
+				0D7848352381B7CB005B5277 /* template3 */,
 				0D8656EF23818C9600B95823 /* Extras */,
 				0D9BC3FF23813604005D8DFF /* VideoHelper.swift */,
-				0D9BC3FB23811FE4005D8DFF /* video.mp4 */,
-				0D9BC3F523811DEB005D8DFF /* air-demo.js */,
-				0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */,
-				0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */,
-				0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */,
-				0D9BC3F123811DEB005D8DFF /* warp.cikernel */,
 				0D4990F12380CA8400511BF3 /* hypno_Platform.h */,
 				0D4990F02380CA8400511BF3 /* hypno_Platform.mm */,
 				0D4990EF2380CA8400511BF3 /* hypno_Video.h */,
 				0D4990EE2380CA8400511BF3 /* hypno_Video.mm */,
 				0D4990812380C56100511BF3 /* AppDelegate.swift */,
 				0D4990832380C56100511BF3 /* FilterController.swift */,
-				0D9BC3EF23811284005D8DFF /* RecordController.swift */,
+				0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */,
 				0D4990872380C56100511BF3 /* Main.storyboard */,
 				0D49908A2380C56400511BF3 /* Assets.xcassets */,
 				0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */,
@@ -333,12 +414,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0D7848352381B7CB005B5277 /* template3 */ = {
+			isa = PBXGroup;
+			children = (
+				0D7848362381B7CB005B5277 /* guitar.mp4 */,
+				0D7848372381B7CB005B5277 /* t3music-loop.mp3 */,
+				0D7848382381B7CB005B5277 /* fractal.mov */,
+				0D7848392381B7CB005B5277 /* template3.js */,
+				0D78483A2381B7CB005B5277 /* crowd.mov */,
+				0D78483B2381B7CB005B5277 /* template3.nyxproj.xml */,
+			);
+			path = template3;
+			sourceTree = "<group>";
+		};
 		0D8656EF23818C9600B95823 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */,
+				0D9BC3EF23811284005D8DFF /* RecordController.swift */,
 				0DC1B3C223817B7B0064D654 /* VideoWriter.swift */,
 				0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */,
+				0D78483123819FE4005B5277 /* MusicTableController.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -413,12 +508,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2CA10F2381BB150034949B /* redlights.mp4 in Resources */,
 				0D4990CC2380C88300511BF3 /* _hypno_.hypno.coreimage.filter.html in Resources */,
 				0D4990D32380C88300511BF3 /* _hypno_.hypno.timemapping.html in Resources */,
+				0D2CA1082381BB150034949B /* t2music-loop.mp3 in Resources */,
 				0D49908E2380C56400511BF3 /* LaunchScreen.storyboard in Resources */,
 				0D4990E32380C88300511BF3 /* LICENSE.v8 in Resources */,
-				0D9BC3F923811DEB005D8DFF /* music-loop.mp3 in Resources */,
+				0D9BC3F923811DEB005D8DFF /* t0music-loop.mp3 in Resources */,
 				0D4990D72380C88300511BF3 /* _hypno_.hypno.html in Resources */,
+				0D2CA11A2381BD040034949B /* t1music-loop.mp3 in Resources */,
 				0D9BC3FA23811DEB005D8DFF /* air-demo.js in Resources */,
 				0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */,
 				0D9BC3F823811DEB005D8DFF /* light-leaks.mp4 in Resources */,
@@ -427,18 +525,30 @@
 				0D4990DC2380C88300511BF3 /* widgets@2x.png in Resources */,
 				0D4990E22380C88300511BF3 /* LICENSE_1_0.v8pp.txt in Resources */,
 				0D4990CD2380C88300511BF3 /* _hypno_.hypno.track.html in Resources */,
+				0D78483D2381B7CB005B5277 /* t3music-loop.mp3 in Resources */,
 				0D4990DD2380C88300511BF3 /* main.js in Resources */,
 				0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */,
 				0D4990D62380C88300511BF3 /* _hypno_.hypno.coreimage.html in Resources */,
 				0D4990C52380C88300511BF3 /* _hypno_.hypno.time.html in Resources */,
+				0D7848412381B7CB005B5277 /* template3.nyxproj.xml in Resources */,
 				0D9BC40423814631005D8DFF /* basic.js in Resources */,
+				0D2CA11E2381BD040034949B /* template1.js in Resources */,
+				0D78483E2381B7CB005B5277 /* fractal.mov in Resources */,
 				0D4990C92380C88300511BF3 /* _hypno_.hypno.color.html in Resources */,
 				0D4990E42380C88300511BF3 /* COPYING.v8pp in Resources */,
+				0D2CA1072381BB150034949B /* justin.mp4 in Resources */,
+				0D78483C2381B7CB005B5277 /* guitar.mp4 in Resources */,
+				0D7848402381B7CB005B5277 /* crowd.mov in Resources */,
 				0D4990D92380C88300511BF3 /* icons@2x.png in Resources */,
 				0D4990892380C56100511BF3 /* Main.storyboard in Resources */,
+				0D2CA11D2381BD040034949B /* template1.nyxproj.xml in Resources */,
 				0D4990DF2380C88300511BF3 /* globals.html in Resources */,
 				0D4990D02380C88300511BF3 /* _hypno_.hypno.clip.html in Resources */,
+				0D2CA10E2381BB150034949B /* piano.mp4 in Resources */,
 				0D4990D42380C88300511BF3 /* _hypno_.hypno.coreimage.kernel.html in Resources */,
+				0D2CA11B2381BD040034949B /* purple1.mp4 in Resources */,
+				0D2CA10C2381BB150034949B /* template2.js in Resources */,
+				0D2CA11C2381BD040034949B /* katy.mp4 in Resources */,
 				0D9BC3FC23812205005D8DFF /* video.mp4 in Resources */,
 				0D4990D52380C88300511BF3 /* _hypno_.html in Resources */,
 				0D4990CF2380C88300511BF3 /* _hypno_.hypno.context.html in Resources */,
@@ -447,13 +557,18 @@
 				0D4990C72380C88300511BF3 /* _hypno_.hypno.coreimage.image.html in Resources */,
 				0D4990CE2380C88300511BF3 /* _hypno_.hypno.composition.html in Resources */,
 				0D4990DA2380C88300511BF3 /* widgets.png in Resources */,
+				0D2CA10A2381BB150034949B /* template2.nyxproj.xml in Resources */,
 				0D4990CA2380C88300511BF3 /* _hypno_.hypno.instruction.html in Resources */,
+				0D2CA10D2381BB150034949B /* countdown.mp4 in Resources */,
 				0D4990C62380C88300511BF3 /* _hypno_.hypno.timerange.html in Resources */,
 				0D4990D82380C88300511BF3 /* main.css in Resources */,
+				0D2CA1202381BD040034949B /* bluelight.mp4 in Resources */,
 				0D4990CB2380C88300511BF3 /* _hypno_.hypno.transform.html in Resources */,
 				0D4990C82380C88300511BF3 /* _hypno_.hypno.blendmode.html in Resources */,
 				0D4990DE2380C88300511BF3 /* search.js in Resources */,
+				0D78483F2381B7CB005B5277 /* template3.js in Resources */,
 				0D9BC3F723811DEB005D8DFF /* hypno-logo.mp4 in Resources */,
+				0D2CA1092381BB150034949B /* purple.mp4 in Resources */,
 				0D9BC3F623811DEB005D8DFF /* warp.cikernel in Resources */,
 				0D4990D22380C88300511BF3 /* _hypno_.hypno.vector.html in Resources */,
 			);
@@ -513,6 +628,7 @@
 				0D9BC40223813A91005D8DFF /* PlayVideoViewController.swift in Sources */,
 				0D9BC406238151D1005D8DFF /* HomeViewController.swift in Sources */,
 				0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */,
+				0D78483223819FE4005B5277 /* MusicTableController.swift in Sources */,
 				0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */,
 				0D4990842380C56100511BF3 /* FilterController.swift in Sources */,
 				0DC1B3C1238163050064D654 /* Artist.swift in Sources */,

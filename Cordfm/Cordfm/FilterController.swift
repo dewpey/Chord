@@ -12,7 +12,7 @@ class FilterController: UIViewController {
 
     @IBOutlet var pagination: UIPageControl!
     let indexMin = 0;
-    let indexMax = 5;
+    let indexMax = 3;
     var currentFilterIndex = 0;
     var currentFilterName = "";
     var videoURL: String?
@@ -20,6 +20,8 @@ class FilterController: UIViewController {
     var player: AVPlayer?;
     var playerLayer: AVPlayerLayer?;
     var video: hypno_Video?;
+    
+    var shareURL: String!
     
     @IBOutlet var previewView: UIView!
     
@@ -67,7 +69,7 @@ class FilterController: UIViewController {
         previewView.layer.addSublayer(playerLayer!)
                 
         
-        doEverything(scriptName: "air-demo")
+        doEverything(scriptName: "template1")
         
     }
     
@@ -79,11 +81,11 @@ class FilterController: UIViewController {
          //let cameraAssetFile = Bundle.main.path(forResource: videoURL?.baseURL?.absoluteString, ofType: "MOV")
          //=print(cameraAssetFile)
          
-         let cameraAssetFile = Bundle.main.path(forResource: "video", ofType: "mp4")
-              let configuration = hypno_Configuration();
-              configuration.script = URL.init (fileURLWithPath: scriptFilePath!);
+         let configuration = hypno_Configuration();
+         configuration.script = URL.init (fileURLWithPath: scriptFilePath!);
          configuration.cameraAssets = [URL.init (fileURLWithPath: videoURL!)];
          video = hypno_Video.create (configuration);
+        //videoCompositionInstruction(video?.composition)
          if video == nil || !video!.error.isEmpty {
              print ("Error")
              print (video!.error);
@@ -105,12 +107,63 @@ class FilterController: UIViewController {
              defaultCenter.addObserver (self, selector: #selector (self.playerItemDidPlayToEndTime(note:)), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: player?.currentItem)
              
             playerLayer!.player = player;
-             player?.play();
+            player?.play();
+            
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+            let videoPath = documentsPath+"/Chord.mov"
+
+
+            let fileManager = FileManager.default
+
+            if fileManager.fileExists(atPath: videoPath)
+            {
+                try! fileManager.removeItem(atPath: videoPath)
+            }
+
+            print("video path \(videoPath)")
+
+            var exportSession = AVAssetExportSession.init(asset: video!.composition, presetName: AVAssetExportPresetHighestQuality)
+            exportSession?.videoComposition = video!.videoComposition
+            exportSession?.outputFileType = AVFileType.mov
+            exportSession?.outputURL = URL.init(fileURLWithPath: videoPath)
+            var exportProgress: Float = 0
+            let queue = DispatchQueue(label: "Export Progress Queue")
+            queue.async(execute: {() -> Void in
+                while exportSession != nil {
+                    //                int prevProgress = exportProgress;
+                    exportProgress = (exportSession?.progress)!
+                    print("current progress == \(exportProgress)")
+                    sleep(1)
+                }
+            })
+
+            exportSession?.exportAsynchronously(completionHandler: {
+
+
+                if exportSession?.status == AVAssetExportSession.Status.failed
+                {
+                    print("Failed \(exportSession?.error)")
+                }else if exportSession?.status == AVAssetExportSession.Status.completed
+                {
+                    UISaveVideoAtPathToSavedPhotosAlbum((exportSession?.outputURL?.path)!, self, nil, nil)
+                    self.shareURL = (exportSession?.outputURL?.path)!
+                        
+                }
+            })
+            
          }
         
     }
     
-
+    @IBAction func handleShare(_ sender: Any) {
+        let activityVC = UIActivityViewController(activityItems: [NSURL(fileURLWithPath: shareURL)], applicationActivities: nil)
+                activityVC.excludedActivityTypes = [.addToReadingList, .assignToContact]
+            DispatchQueue.main.async { [weak self] in
+              // 3
+                self!.present(activityVC, animated: true, completion: nil)
+            }
+    }
+    
 
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
         
@@ -120,7 +173,6 @@ class FilterController: UIViewController {
                 currentFilterIndex = indexMin;
             }
             print("Swipe Left")
-            doEverything(scriptName: "basic")
         }
         
         if (sender.direction == .right) {
@@ -130,7 +182,24 @@ class FilterController: UIViewController {
             }
         
             print("Swipe Right")
-            doEverything(scriptName: "air-demo")
+        }
+        
+        switch(currentFilterIndex){
+            case 0:
+                doEverything(scriptName: "template1");
+                break;
+            case 1:
+                doEverything(scriptName: "template1");
+                break;
+            case 2:
+                doEverything(scriptName: "template2");
+                break;
+            case 3:
+                doEverything(scriptName: "template3");
+                break;
+                
+        default:
+            break;
         }
         
         pagination.currentPage = currentFilterIndex
