@@ -1,16 +1,25 @@
 PODS:
   - Alamofire (4.8.2)
+  - CameraKit-iOS (1.2.1)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - CameraKit-iOS
+  - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
+  trunk:
+    - CameraKit-iOS
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CameraKit-iOS: 7a8aeb4b6ac93c59088ada934efb6010ed2394c1
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 3d21714deffef2ddf827190035465e2d8304a11b
+PODFILE CHECKSUM: bdac9739d6cdce25b65b45bb5bd48a5ec9886111
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.4

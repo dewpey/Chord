@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990812380C56100511BF3 /* AppDelegate.swift */; };
-		0D4990842380C56100511BF3 /* CreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990832380C56100511BF3 /* CreateController.swift */; };
-		0D4990862380C56100511BF3 /* RenameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990852380C56100511BF3 /* RenameController.swift */; };
+		0D4990842380C56100511BF3 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990832380C56100511BF3 /* FilterController.swift */; };
 		0D4990892380C56100511BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990872380C56100511BF3 /* Main.storyboard */; };
 		0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D49908A2380C56400511BF3 /* Assets.xcassets */; };
 		0D49908E2380C56400511BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		0D4990DD2380C88300511BF3 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B82380C88100511BF3 /* main.js */; };
 		0D4990DE2380C88300511BF3 /* search.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B92380C88100511BF3 /* search.js */; };
 		0D4990DF2380C88300511BF3 /* globals.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BA2380C88100511BF3 /* globals.html */; };
-		0D4990E02380C88300511BF3 /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990BB2380C88200511BF3 /* libhypno.a */; };
 		0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BE2380C88300511BF3 /* LICENSE.juce */; };
 		0D4990E22380C88300511BF3 /* LICENSE_1_0.v8pp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BF2380C88300511BF3 /* LICENSE_1_0.v8pp.txt */; };
 		0D4990E32380C88300511BF3 /* LICENSE.v8 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990C12380C88300511BF3 /* LICENSE.v8 */; };
@@ -52,14 +50,29 @@
 		0D4990EC2380CA1600511BF3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990EB2380CA1600511BF3 /* CoreServices.framework */; };
 		0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990EE2380CA8400511BF3 /* hypno_Video.mm */; };
 		0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990F02380CA8400511BF3 /* hypno_Platform.mm */; };
+		0D7BAE7C23810D34000AD21B /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7BAE7B23810D34000AD21B /* libhypno.a */; };
+		0D7BAE7E23810D40000AD21B /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7BAE7D23810D40000AD21B /* libhypno.a */; };
+		0D9BC3F023811284005D8DFF /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC3EF23811284005D8DFF /* RecordController.swift */; };
+		0D9BC3F623811DEB005D8DFF /* warp.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F123811DEB005D8DFF /* warp.cikernel */; };
+		0D9BC3F723811DEB005D8DFF /* hypno-logo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */; };
+		0D9BC3F823811DEB005D8DFF /* light-leaks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */; };
+		0D9BC3F923811DEB005D8DFF /* music-loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */; };
+		0D9BC3FA23811DEB005D8DFF /* air-demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3F523811DEB005D8DFF /* air-demo.js */; };
+		0D9BC3FC23812205005D8DFF /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC3FB23811FE4005D8DFF /* video.mp4 */; };
+		0D9BC3FE238135D2005D8DFF /* RecordVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */; };
+		0D9BC40023813604005D8DFF /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC3FF23813604005D8DFF /* VideoHelper.swift */; };
+		0D9BC40223813A91005D8DFF /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */; };
+		0D9BC40423814631005D8DFF /* basic.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D9BC40323814631005D8DFF /* basic.js */; };
+		0D9BC406238151D1005D8DFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC405238151D1005D8DFF /* HomeViewController.swift */; };
+		0DC1B3BF23815E1A0064D654 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3BE23815E1A0064D654 /* Event.swift */; };
+		0DC1B3C1238163050064D654 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3C0238163050064D654 /* Artist.swift */; };
 		A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D49907E2380C56100511BF3 /* Cordfm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cordfm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4990812380C56100511BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D4990832380C56100511BF3 /* CreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateController.swift; sourceTree = "<group>"; };
-		0D4990852380C56100511BF3 /* RenameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameController.swift; sourceTree = "<group>"; };
+		0D4990832380C56100511BF3 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		0D4990882380C56100511BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D49908A2380C56400511BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D49908D2380C56400511BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +106,6 @@
 		0D4990B82380C88100511BF3 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		0D4990B92380C88100511BF3 /* search.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = search.js; sourceTree = "<group>"; };
 		0D4990BA2380C88100511BF3 /* globals.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = globals.html; sourceTree = "<group>"; };
-		0D4990BB2380C88200511BF3 /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhypno.a; sourceTree = "<group>"; };
 		0D4990BC2380C88300511BF3 /* hypno_Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno_Platform.h; sourceTree = "<group>"; };
 		0D4990BD2380C88300511BF3 /* hypno_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno_Configuration.h; sourceTree = "<group>"; };
 		0D4990BE2380C88300511BF3 /* LICENSE.juce */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.juce; sourceTree = "<group>"; };
@@ -110,6 +122,22 @@
 		0D4990EF2380CA8400511BF3 /* hypno_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Video.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Video.h"; sourceTree = "<group>"; };
 		0D4990F02380CA8400511BF3 /* hypno_Platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = hypno_Platform.mm; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.mm"; sourceTree = "<group>"; };
 		0D4990F12380CA8400511BF3 /* hypno_Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Platform.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.h"; sourceTree = "<group>"; };
+		0D7BAE7B23810D34000AD21B /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhypno.a; path = Hypno/libhypno.a; sourceTree = "<group>"; };
+		0D7BAE7D23810D40000AD21B /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhypno.a; sourceTree = "<group>"; };
+		0D9BC3EF23811284005D8DFF /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
+		0D9BC3F123811DEB005D8DFF /* warp.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = warp.cikernel; sourceTree = "<group>"; };
+		0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hypno-logo.mp4"; sourceTree = "<group>"; };
+		0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "light-leaks.mp4"; sourceTree = "<group>"; };
+		0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-loop.mp3"; sourceTree = "<group>"; };
+		0D9BC3F523811DEB005D8DFF /* air-demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "air-demo.js"; sourceTree = "<group>"; };
+		0D9BC3FB23811FE4005D8DFF /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
+		0D9BC3FF23813604005D8DFF /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
+		0D9BC40323814631005D8DFF /* basic.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = basic.js; sourceTree = "<group>"; };
+		0D9BC405238151D1005D8DFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0DC1B3BE23815E1A0064D654 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0DC1B3C0238163050064D654 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.release.xcconfig"; sourceTree = "<group>"; };
 		A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.debug.xcconfig"; sourceTree = "<group>"; };
 		BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cordfm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,10 +148,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7BAE7C23810D34000AD21B /* libhypno.a in Frameworks */,
 				0D4990EC2380CA1600511BF3 /* CoreServices.framework in Frameworks */,
+				0D7BAE7E23810D40000AD21B /* libhypno.a in Frameworks */,
 				0D4990EA2380CA0C00511BF3 /* CoreMedia.framework in Frameworks */,
 				0D4990E82380CA0500511BF3 /* AVFoundation.framework in Frameworks */,
-				0D4990E02380C88300511BF3 /* libhypno.a in Frameworks */,
 				A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,18 +182,31 @@
 		0D4990802380C56100511BF3 /* Cordfm */ = {
 			isa = PBXGroup;
 			children = (
+				0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */,
+				0D9BC3FF23813604005D8DFF /* VideoHelper.swift */,
+				0D9BC3FB23811FE4005D8DFF /* video.mp4 */,
+				0D9BC3F523811DEB005D8DFF /* air-demo.js */,
+				0D9BC3F223811DEB005D8DFF /* hypno-logo.mp4 */,
+				0D9BC3F323811DEB005D8DFF /* light-leaks.mp4 */,
+				0D9BC3F423811DEB005D8DFF /* music-loop.mp3 */,
+				0D9BC3F123811DEB005D8DFF /* warp.cikernel */,
 				0D4990F12380CA8400511BF3 /* hypno_Platform.h */,
 				0D4990F02380CA8400511BF3 /* hypno_Platform.mm */,
 				0D4990EF2380CA8400511BF3 /* hypno_Video.h */,
 				0D4990EE2380CA8400511BF3 /* hypno_Video.mm */,
 				0D4990812380C56100511BF3 /* AppDelegate.swift */,
-				0D4990832380C56100511BF3 /* CreateController.swift */,
-				0D4990852380C56100511BF3 /* RenameController.swift */,
+				0D4990832380C56100511BF3 /* FilterController.swift */,
+				0D9BC3EF23811284005D8DFF /* RecordController.swift */,
 				0D4990872380C56100511BF3 /* Main.storyboard */,
 				0D49908A2380C56400511BF3 /* Assets.xcassets */,
 				0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */,
 				0D49908F2380C56400511BF3 /* Info.plist */,
 				0D4990ED2380CA8400511BF3 /* Cordfm-Bridging-Header.h */,
+				0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */,
+				0D9BC40323814631005D8DFF /* basic.js */,
+				0D9BC405238151D1005D8DFF /* HomeViewController.swift */,
+				0DC1B3C0238163050064D654 /* Artist.swift */,
+				0DC1B3BE23815E1A0064D654 /* Event.swift */,
 			);
 			path = Cordfm;
 			sourceTree = "<group>";
@@ -172,12 +214,12 @@
 		0D4990952380C87900511BF3 /* Hypno */ = {
 			isa = PBXGroup;
 			children = (
+				0D7BAE7D23810D40000AD21B /* libhypno.a */,
 				0D4990C22380C88300511BF3 /* COPYING.v8pp */,
 				0D4990BD2380C88300511BF3 /* hypno_Configuration.h */,
 				0D4990BC2380C88300511BF3 /* hypno_Platform.h */,
 				0D4990C02380C88300511BF3 /* hypno_Video.h */,
 				0D4990962380C88100511BF3 /* hypno.h */,
-				0D4990BB2380C88200511BF3 /* libhypno.a */,
 				0D4990BF2380C88300511BF3 /* LICENSE_1_0.v8pp.txt */,
 				0D4990BE2380C88300511BF3 /* LICENSE.juce */,
 				0D4990C32380C88300511BF3 /* LICENSE.spdlog */,
@@ -281,6 +323,7 @@
 		0D4990E62380CA0500511BF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7BAE7B23810D34000AD21B /* libhypno.a */,
 				0D4990EB2380CA1600511BF3 /* CoreServices.framework */,
 				0D4990E92380CA0C00511BF3 /* CoreMedia.framework */,
 				0D4990E72380CA0500511BF3 /* AVFoundation.framework */,
@@ -363,8 +406,11 @@
 				0D4990D32380C88300511BF3 /* _hypno_.hypno.timemapping.html in Resources */,
 				0D49908E2380C56400511BF3 /* LaunchScreen.storyboard in Resources */,
 				0D4990E32380C88300511BF3 /* LICENSE.v8 in Resources */,
+				0D9BC3F923811DEB005D8DFF /* music-loop.mp3 in Resources */,
 				0D4990D72380C88300511BF3 /* _hypno_.hypno.html in Resources */,
+				0D9BC3FA23811DEB005D8DFF /* air-demo.js in Resources */,
 				0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */,
+				0D9BC3F823811DEB005D8DFF /* light-leaks.mp4 in Resources */,
 				0D4990D12380C88300511BF3 /* _hypno_.hypno.asset.html in Resources */,
 				0D4990C42380C88300511BF3 /* index.html in Resources */,
 				0D4990DC2380C88300511BF3 /* widgets@2x.png in Resources */,
@@ -374,6 +420,7 @@
 				0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */,
 				0D4990D62380C88300511BF3 /* _hypno_.hypno.coreimage.html in Resources */,
 				0D4990C52380C88300511BF3 /* _hypno_.hypno.time.html in Resources */,
+				0D9BC40423814631005D8DFF /* basic.js in Resources */,
 				0D4990C92380C88300511BF3 /* _hypno_.hypno.color.html in Resources */,
 				0D4990E42380C88300511BF3 /* COPYING.v8pp in Resources */,
 				0D4990D92380C88300511BF3 /* icons@2x.png in Resources */,
@@ -381,6 +428,7 @@
 				0D4990DF2380C88300511BF3 /* globals.html in Resources */,
 				0D4990D02380C88300511BF3 /* _hypno_.hypno.clip.html in Resources */,
 				0D4990D42380C88300511BF3 /* _hypno_.hypno.coreimage.kernel.html in Resources */,
+				0D9BC3FC23812205005D8DFF /* video.mp4 in Resources */,
 				0D4990D52380C88300511BF3 /* _hypno_.html in Resources */,
 				0D4990CF2380C88300511BF3 /* _hypno_.hypno.context.html in Resources */,
 				0D4990E52380C88300511BF3 /* LICENSE.spdlog in Resources */,
@@ -394,6 +442,8 @@
 				0D4990CB2380C88300511BF3 /* _hypno_.hypno.transform.html in Resources */,
 				0D4990C82380C88300511BF3 /* _hypno_.hypno.blendmode.html in Resources */,
 				0D4990DE2380C88300511BF3 /* search.js in Resources */,
+				0D9BC3F723811DEB005D8DFF /* hypno-logo.mp4 in Resources */,
+				0D9BC3F623811DEB005D8DFF /* warp.cikernel in Resources */,
 				0D4990D22380C88300511BF3 /* _hypno_.hypno.vector.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,17 +474,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -444,11 +493,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9BC3F023811284005D8DFF /* RecordController.swift in Sources */,
+				0D9BC3FE238135D2005D8DFF /* RecordVideoViewController.swift in Sources */,
+				0D9BC40023813604005D8DFF /* VideoHelper.swift in Sources */,
 				0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */,
-				0D4990862380C56100511BF3 /* RenameController.swift in Sources */,
+				0DC1B3BF23815E1A0064D654 /* Event.swift in Sources */,
+				0D9BC40223813A91005D8DFF /* PlayVideoViewController.swift in Sources */,
+				0D9BC406238151D1005D8DFF /* HomeViewController.swift in Sources */,
 				0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */,
 				0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */,
-				0D4990842380C56100511BF3 /* CreateController.swift in Sources */,
+				0D4990842380C56100511BF3 /* FilterController.swift in Sources */,
+				0DC1B3C1238163050064D654 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +654,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Hypno";
 				INFOPLIST_FILE = Cordfm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,6 +683,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Hypno";
 				INFOPLIST_FILE = Cordfm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
