@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
+import NotificationBannerSwift
 class customCell: UITableViewCell {
     
     @IBOutlet var cellView: UIView!
@@ -23,6 +23,14 @@ class HomeViewController: UITableViewController {
     var allEvents: [Event] = []
     var allArtists: [Artist] = []
     
+    @IBAction func notify(_ sender: Any) {
+        let banner = NotificationBanner(title: "Reward!", subtitle: "You were awarded free tickets by Stalley for your content", style: .success)
+        banner.onTap = {
+            self.performSegue(withIdentifier: "toProfile", sender: nil)
+        }
+        banner.show()
+    }
+    @IBOutlet var notification: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,9 +126,12 @@ class HomeViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier != "toProfile"){
         let selectedIndex = self.tableView.indexPath(for: sender as! UITableViewCell)
           let vc = segue.destination as! RecordVideoViewController
         vc.event = allEvents[selectedIndex!.row]
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }

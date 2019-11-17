@@ -88,6 +88,8 @@
 		0DC1B3BF23815E1A0064D654 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3BE23815E1A0064D654 /* Event.swift */; };
 		0DC1B3C1238163050064D654 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3C0238163050064D654 /* Artist.swift */; };
 		0DC1B3C323817B7B0064D654 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3C223817B7B0064D654 /* VideoWriter.swift */; };
+		0DDEE45D2381E0D900E82B11 /* stalley.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0DDEE45C2381E0D900E82B11 /* stalley.mov */; };
+		0DDEE45F2381E12C00E82B11 /* stalley.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0DDEE45E2381E12C00E82B11 /* stalley.mov */; };
 		A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +184,8 @@
 		0DC1B3BE23815E1A0064D654 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0DC1B3C0238163050064D654 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		0DC1B3C223817B7B0064D654 /* VideoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		0DDEE45C2381E0D900E82B11 /* stalley.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = stalley.mov; sourceTree = "<group>"; };
+		0DDEE45E2381E12C00E82B11 /* stalley.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = stalley.mov; path = Cordfm/template1/stalley.mov; sourceTree = SOURCE_ROOT; };
 		7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.release.xcconfig"; sourceTree = "<group>"; };
 		A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.debug.xcconfig"; sourceTree = "<group>"; };
 		BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cordfm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +224,7 @@
 		0D2CA0FB2381BB150034949B /* template2 */ = {
 			isa = PBXGroup;
 			children = (
+				0DDEE45E2381E12C00E82B11 /* stalley.mov */,
 				0D2CA0FC2381BB150034949B /* justin.mp4 */,
 				0D2CA0FD2381BB150034949B /* t2music-loop.mp3 */,
 				0D2CA0FE2381BB150034949B /* purple.mp4 */,
@@ -235,6 +240,7 @@
 		0D2CA1122381BD040034949B /* template1 */ = {
 			isa = PBXGroup;
 			children = (
+				0DDEE45C2381E0D900E82B11 /* stalley.mov */,
 				0D2CA1132381BD040034949B /* t1music-loop.mp3 */,
 				0D2CA1142381BD040034949B /* purple1.mp4 */,
 				0D2CA1152381BD040034949B /* katy.mp4 */,
@@ -517,6 +523,7 @@
 				0D9BC3F923811DEB005D8DFF /* t0music-loop.mp3 in Resources */,
 				0D4990D72380C88300511BF3 /* _hypno_.hypno.html in Resources */,
 				0D2CA11A2381BD040034949B /* t1music-loop.mp3 in Resources */,
+				0DDEE45D2381E0D900E82B11 /* stalley.mov in Resources */,
 				0D9BC3FA23811DEB005D8DFF /* air-demo.js in Resources */,
 				0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */,
 				0D9BC3F823811DEB005D8DFF /* light-leaks.mp4 in Resources */,
@@ -529,6 +536,7 @@
 				0D4990DD2380C88300511BF3 /* main.js in Resources */,
 				0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */,
 				0D4990D62380C88300511BF3 /* _hypno_.hypno.coreimage.html in Resources */,
+				0DDEE45F2381E12C00E82B11 /* stalley.mov in Resources */,
 				0D4990C52380C88300511BF3 /* _hypno_.hypno.time.html in Resources */,
 				0D7848412381B7CB005B5277 /* template3.nyxproj.xml in Resources */,
 				0D9BC40423814631005D8DFF /* basic.js in Resources */,
