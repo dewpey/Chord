@@ -42,14 +42,15 @@ class PlayVideoViewController: UIViewController, UIImagePickerControllerDelegate
      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
       
      guard let mediaType = info[.mediaType] as? String,
-      mediaType == (kUTTypeMovie as String),
+      mediaType == (kUTTypeMPEG4
+        as String),
         let url = info[.mediaURL] as? URL,
       UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
       else { return }
       print(url)
         videoURL = url
       dismiss(animated: true) {
-        self.performSegue(withIdentifier: "toFilter", sender: nil)
+        self.performSegue(withIdentifier: "toFilter", sender: url.relativeString)
         print(url)
       }
     }
@@ -58,7 +59,7 @@ class PlayVideoViewController: UIViewController, UIImagePickerControllerDelegate
         
         let vc = segue.destination as! FilterController
 
-        vc.videoURL = videoURL as? URL
+        vc.videoURL = sender as! String
 
     }
     

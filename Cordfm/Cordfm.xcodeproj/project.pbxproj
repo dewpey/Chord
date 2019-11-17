@@ -66,6 +66,7 @@
 		0D9BC406238151D1005D8DFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BC405238151D1005D8DFF /* HomeViewController.swift */; };
 		0DC1B3BF23815E1A0064D654 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3BE23815E1A0064D654 /* Event.swift */; };
 		0DC1B3C1238163050064D654 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3C0238163050064D654 /* Artist.swift */; };
+		0DC1B3C323817B7B0064D654 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1B3C223817B7B0064D654 /* VideoWriter.swift */; };
 		A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +139,7 @@
 		0D9BC405238151D1005D8DFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0DC1B3BE23815E1A0064D654 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0DC1B3C0238163050064D654 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		0DC1B3C223817B7B0064D654 /* VideoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
 		7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.release.xcconfig"; sourceTree = "<group>"; };
 		A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.debug.xcconfig"; sourceTree = "<group>"; };
 		BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cordfm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,7 +184,7 @@
 		0D4990802380C56100511BF3 /* Cordfm */ = {
 			isa = PBXGroup;
 			children = (
-				0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */,
+				0D8656EF23818C9600B95823 /* Extras */,
 				0D9BC3FF23813604005D8DFF /* VideoHelper.swift */,
 				0D9BC3FB23811FE4005D8DFF /* video.mp4 */,
 				0D9BC3F523811DEB005D8DFF /* air-demo.js */,
@@ -202,7 +204,6 @@
 				0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */,
 				0D49908F2380C56400511BF3 /* Info.plist */,
 				0D4990ED2380CA8400511BF3 /* Cordfm-Bridging-Header.h */,
-				0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */,
 				0D9BC40323814631005D8DFF /* basic.js */,
 				0D9BC405238151D1005D8DFF /* HomeViewController.swift */,
 				0DC1B3C0238163050064D654 /* Artist.swift */,
@@ -330,6 +331,16 @@
 				BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D8656EF23818C9600B95823 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BC3FD238135D2005D8DFF /* RecordVideoViewController.swift */,
+				0DC1B3C223817B7B0064D654 /* VideoWriter.swift */,
+				0D9BC40123813A91005D8DFF /* PlayVideoViewController.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 		2EB5BEDFF2EC61B9207BE772 /* Pods */ = {
@@ -497,6 +508,7 @@
 				0D9BC3FE238135D2005D8DFF /* RecordVideoViewController.swift in Sources */,
 				0D9BC40023813604005D8DFF /* VideoHelper.swift in Sources */,
 				0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */,
+				0DC1B3C323817B7B0064D654 /* VideoWriter.swift in Sources */,
 				0DC1B3BF23815E1A0064D654 /* Event.swift in Sources */,
 				0D9BC40223813A91005D8DFF /* PlayVideoViewController.swift in Sources */,
 				0D9BC406238151D1005D8DFF /* HomeViewController.swift in Sources */,

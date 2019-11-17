@@ -15,7 +15,7 @@ class FilterController: UIViewController {
     let indexMax = 5;
     var currentFilterIndex = 0;
     var currentFilterName = "";
-    var videoURL: URL?
+    var videoURL: String?
     
     var player: AVPlayer?;
     var playerLayer: AVPlayerLayer?;
@@ -47,9 +47,11 @@ class FilterController: UIViewController {
 
         print(videoURL)
         
+        /*
         encodeVideo(videoUrl: videoURL!, resultClosure: { response in
             debugPrint(response)
         })
+        */
         
         hypno_Platform.setOnSystemLog  { (message: String) in
                     print (message);
@@ -80,7 +82,7 @@ class FilterController: UIViewController {
          let cameraAssetFile = Bundle.main.path(forResource: "video", ofType: "mp4")
               let configuration = hypno_Configuration();
               configuration.script = URL.init (fileURLWithPath: scriptFilePath!);
-         configuration.cameraAssets = [URL.init (fileURLWithPath: cameraAssetFile!)];
+         configuration.cameraAssets = [URL.init (fileURLWithPath: videoURL!)];
          video = hypno_Video.create (configuration);
          if video == nil || !video!.error.isEmpty {
              print ("Error")
@@ -88,10 +90,11 @@ class FilterController: UIViewController {
          }
          else {
             print(video!.composition)
-             let compositionPlayerItem = AVPlayerItem(asset: video!.composition);
+            
+            let compositionPlayerItem = AVPlayerItem(asset: video!.composition);
+    
              compositionPlayerItem.videoComposition = video!.videoComposition;
              compositionPlayerItem.audioMix = video!.audioMix;
-             
              let defaultCenter = NotificationCenter.default;
              if player != nil {
                  defaultCenter.removeObserver (self, name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: player?.currentItem);
@@ -99,7 +102,6 @@ class FilterController: UIViewController {
              
              player = AVPlayer(playerItem: compositionPlayerItem);
              player?.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none;
-             
              defaultCenter.addObserver (self, selector: #selector (self.playerItemDidPlayToEndTime(note:)), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: player?.currentItem)
              
             playerLayer!.player = player;
@@ -108,48 +110,6 @@ class FilterController: UIViewController {
         
     }
     
-    func encodeVideo(videoUrl: URL, outputUrl: URL? = nil, resultClosure: @escaping (URL?) -> Void ) {
-
-        var finalOutputUrl: URL? = outputUrl
-
-        if finalOutputUrl == nil {
-            var url = videoUrl
-            url.deletePathExtension()
-            url.appendPathExtension(".mp4")
-            finalOutputUrl = url
-        }
-
-        if FileManager.default.fileExists(atPath: finalOutputUrl!.path) {
-            print("Converted file already exists \(finalOutputUrl!.path)")
-            resultClosure(finalOutputUrl)
-            return
-        }
-
-        let asset = AVURLAsset(url: videoUrl)
-        if let exportSession = AVAssetExportSession(asset: asset, presetName: AVAssetExportPresetPassthrough) {
-            exportSession.outputURL = finalOutputUrl!
-            exportSession.outputFileType = AVFileType.mp4
-            let start = CMTimeMakeWithSeconds(0.0, preferredTimescale: 0)
-            let range = CMTimeRangeMake(start: start, duration: asset.duration)
-            exportSession.timeRange = range
-            exportSession.shouldOptimizeForNetworkUse = true
-            exportSession.exportAsynchronously() {
-
-                switch exportSession.status {
-                case .failed:
-                    print("Export failed: \(exportSession.error != nil ? exportSession.error!.localizedDescription : "No Error Info")")
-                case .cancelled:
-                    print("Export canceled")
-                case .completed:
-                    resultClosure(finalOutputUrl!)
-                default:
-                    break
-                }
-            }
-        } else {
-            resultClosure(nil)
-        }
-    }
 
 
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {

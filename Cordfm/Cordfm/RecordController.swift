@@ -48,13 +48,8 @@ class RecordController: UIViewController, AVCaptureFileOutputRecordingDelegate {
 
         let cameraButtonRecognizer = UITapGestureRecognizer(target: self, action: #selector(RecordController.startCapture))
 
-        cameraButton.addGestureRecognizer(cameraButtonRecognizer)
+        camPreview.addGestureRecognizer(cameraButtonRecognizer)
 
-        cameraButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-
-        cameraButton.backgroundColor = UIColor.red
-
-        camPreview.addSubview(cameraButton)
 
     }
     func setupPreview() {
@@ -175,10 +170,11 @@ class RecordController: UIViewController, AVCaptureFileOutputRecordingDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-       
+        print(sender)
+        
         let vc = segue.destination as! FilterController
 
-        vc.videoURL = videoURL
+        vc.videoURL = sender as! String
 
     }
 
@@ -240,12 +236,21 @@ class RecordController: UIViewController, AVCaptureFileOutputRecordingDelegate {
 
         } else {
 
-            let videoRecorded = outputURL! as URL
-
-            performSegue(withIdentifier: "showFilter", sender: videoRecorded)
+            let videoRecorded = outputFileURL as URL
+            
+             UISaveVideoAtPathToSavedPhotosAlbum(videoRecorded.relativePath, self, #selector(video(_:didFinishSavingWithError:contextInfo:)), nil)
+   
+            
 
         }
 
     }
+    
+    @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
+      let title = (error == nil) ? "Success" : "Error"
+      let message = (error == nil) ? "Video was saved" : "Video failed to save"
+      performSegue(withIdentifier: "showFilter", sender: videoPath)
+    }
+    
 
 }
