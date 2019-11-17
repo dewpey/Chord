@@ -1,11 +1,17 @@
 PODS:
   - Alamofire (4.8.2)
   - CameraKit-iOS (1.2.1)
+  - MarqueeLabel (4.0.0)
+  - NotificationBannerSwift (3.0.2):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - CameraKit-iOS
+  - NotificationBannerSwift (~> 3.0.0)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -13,13 +19,19 @@ SPEC REPOS:
     - Alamofire
   trunk:
     - CameraKit-iOS
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CameraKit-iOS: 7a8aeb4b6ac93c59088ada934efb6010ed2394c1
+  MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
+  NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: bdac9739d6cdce25b65b45bb5bd48a5ec9886111
+PODFILE CHECKSUM: 3f7f8e8040d1aac30fad70286513d83550843651
 
 COCOAPODS: 1.8.4
