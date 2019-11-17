@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990812380C56100511BF3 /* AppDelegate.swift */; };
+		0D4990842380C56100511BF3 /* CreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990832380C56100511BF3 /* CreateController.swift */; };
+		0D4990862380C56100511BF3 /* RenameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990852380C56100511BF3 /* RenameController.swift */; };
+		0D4990892380C56100511BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990872380C56100511BF3 /* Main.storyboard */; };
+		0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D49908A2380C56400511BF3 /* Assets.xcassets */; };
+		0D49908E2380C56400511BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */; };
+		0D4990C42380C88300511BF3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990992380C88100511BF3 /* index.html */; };
+		0D4990C52380C88300511BF3 /* _hypno_.hypno.time.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D49909B2380C88100511BF3 /* _hypno_.hypno.time.html */; };
+		0D4990C62380C88300511BF3 /* _hypno_.hypno.timerange.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D49909C2380C88100511BF3 /* _hypno_.hypno.timerange.html */; };
+		0D4990C72380C88300511BF3 /* _hypno_.hypno.coreimage.image.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D49909D2380C88100511BF3 /* _hypno_.hypno.coreimage.image.html */; };
+		0D4990C82380C88300511BF3 /* _hypno_.hypno.blendmode.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D49909E2380C88100511BF3 /* _hypno_.hypno.blendmode.html */; };
+		0D4990C92380C88300511BF3 /* _hypno_.hypno.color.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D49909F2380C88100511BF3 /* _hypno_.hypno.color.html */; };
+		0D4990CA2380C88300511BF3 /* _hypno_.hypno.instruction.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A02380C88100511BF3 /* _hypno_.hypno.instruction.html */; };
+		0D4990CB2380C88300511BF3 /* _hypno_.hypno.transform.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A12380C88100511BF3 /* _hypno_.hypno.transform.html */; };
+		0D4990CC2380C88300511BF3 /* _hypno_.hypno.coreimage.filter.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A22380C88100511BF3 /* _hypno_.hypno.coreimage.filter.html */; };
+		0D4990CD2380C88300511BF3 /* _hypno_.hypno.track.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A32380C88100511BF3 /* _hypno_.hypno.track.html */; };
+		0D4990CE2380C88300511BF3 /* _hypno_.hypno.composition.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A42380C88100511BF3 /* _hypno_.hypno.composition.html */; };
+		0D4990CF2380C88300511BF3 /* _hypno_.hypno.context.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A52380C88100511BF3 /* _hypno_.hypno.context.html */; };
+		0D4990D02380C88300511BF3 /* _hypno_.hypno.clip.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A62380C88100511BF3 /* _hypno_.hypno.clip.html */; };
+		0D4990D12380C88300511BF3 /* _hypno_.hypno.asset.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A72380C88100511BF3 /* _hypno_.hypno.asset.html */; };
+		0D4990D22380C88300511BF3 /* _hypno_.hypno.vector.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A82380C88100511BF3 /* _hypno_.hypno.vector.html */; };
+		0D4990D32380C88300511BF3 /* _hypno_.hypno.timemapping.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990A92380C88100511BF3 /* _hypno_.hypno.timemapping.html */; };
+		0D4990D42380C88300511BF3 /* _hypno_.hypno.coreimage.kernel.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990AA2380C88100511BF3 /* _hypno_.hypno.coreimage.kernel.html */; };
+		0D4990D52380C88300511BF3 /* _hypno_.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990AC2380C88100511BF3 /* _hypno_.html */; };
+		0D4990D62380C88300511BF3 /* _hypno_.hypno.coreimage.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990AD2380C88100511BF3 /* _hypno_.hypno.coreimage.html */; };
+		0D4990D72380C88300511BF3 /* _hypno_.hypno.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990AE2380C88100511BF3 /* _hypno_.hypno.html */; };
+		0D4990D82380C88300511BF3 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B12380C88100511BF3 /* main.css */; };
+		0D4990D92380C88300511BF3 /* icons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B32380C88100511BF3 /* icons@2x.png */; };
+		0D4990DA2380C88300511BF3 /* widgets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B42380C88100511BF3 /* widgets.png */; };
+		0D4990DB2380C88300511BF3 /* icons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B52380C88100511BF3 /* icons.png */; };
+		0D4990DC2380C88300511BF3 /* widgets@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B62380C88100511BF3 /* widgets@2x.png */; };
+		0D4990DD2380C88300511BF3 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B82380C88100511BF3 /* main.js */; };
+		0D4990DE2380C88300511BF3 /* search.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990B92380C88100511BF3 /* search.js */; };
+		0D4990DF2380C88300511BF3 /* globals.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BA2380C88100511BF3 /* globals.html */; };
+		0D4990E02380C88300511BF3 /* libhypno.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990BB2380C88200511BF3 /* libhypno.a */; };
+		0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BE2380C88300511BF3 /* LICENSE.juce */; };
+		0D4990E22380C88300511BF3 /* LICENSE_1_0.v8pp.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990BF2380C88300511BF3 /* LICENSE_1_0.v8pp.txt */; };
+		0D4990E32380C88300511BF3 /* LICENSE.v8 in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990C12380C88300511BF3 /* LICENSE.v8 */; };
+		0D4990E42380C88300511BF3 /* COPYING.v8pp in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990C22380C88300511BF3 /* COPYING.v8pp */; };
+		0D4990E52380C88300511BF3 /* LICENSE.spdlog in Resources */ = {isa = PBXBuildFile; fileRef = 0D4990C32380C88300511BF3 /* LICENSE.spdlog */; };
+		0D4990E82380CA0500511BF3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990E72380CA0500511BF3 /* AVFoundation.framework */; };
+		0D4990EA2380CA0C00511BF3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990E92380CA0C00511BF3 /* CoreMedia.framework */; };
+		0D4990EC2380CA1600511BF3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4990EB2380CA1600511BF3 /* CoreServices.framework */; };
+		0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990EE2380CA8400511BF3 /* hypno_Video.mm */; };
+		0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D4990F02380CA8400511BF3 /* hypno_Platform.mm */; };
+		A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D49907E2380C56100511BF3 /* Cordfm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cordfm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4990812380C56100511BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D4990832380C56100511BF3 /* CreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateController.swift; sourceTree = "<group>"; };
+		0D4990852380C56100511BF3 /* RenameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameController.swift; sourceTree = "<group>"; };
+		0D4990882380C56100511BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D49908A2380C56400511BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D49908D2380C56400511BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D49908F2380C56400511BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4990962380C88100511BF3 /* hypno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno.h; sourceTree = "<group>"; };
+		0D4990992380C88100511BF3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		0D49909B2380C88100511BF3 /* _hypno_.hypno.time.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.time.html; sourceTree = "<group>"; };
+		0D49909C2380C88100511BF3 /* _hypno_.hypno.timerange.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.timerange.html; sourceTree = "<group>"; };
+		0D49909D2380C88100511BF3 /* _hypno_.hypno.coreimage.image.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.coreimage.image.html; sourceTree = "<group>"; };
+		0D49909E2380C88100511BF3 /* _hypno_.hypno.blendmode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.blendmode.html; sourceTree = "<group>"; };
+		0D49909F2380C88100511BF3 /* _hypno_.hypno.color.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.color.html; sourceTree = "<group>"; };
+		0D4990A02380C88100511BF3 /* _hypno_.hypno.instruction.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.instruction.html; sourceTree = "<group>"; };
+		0D4990A12380C88100511BF3 /* _hypno_.hypno.transform.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.transform.html; sourceTree = "<group>"; };
+		0D4990A22380C88100511BF3 /* _hypno_.hypno.coreimage.filter.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.coreimage.filter.html; sourceTree = "<group>"; };
+		0D4990A32380C88100511BF3 /* _hypno_.hypno.track.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.track.html; sourceTree = "<group>"; };
+		0D4990A42380C88100511BF3 /* _hypno_.hypno.composition.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.composition.html; sourceTree = "<group>"; };
+		0D4990A52380C88100511BF3 /* _hypno_.hypno.context.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.context.html; sourceTree = "<group>"; };
+		0D4990A62380C88100511BF3 /* _hypno_.hypno.clip.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.clip.html; sourceTree = "<group>"; };
+		0D4990A72380C88100511BF3 /* _hypno_.hypno.asset.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.asset.html; sourceTree = "<group>"; };
+		0D4990A82380C88100511BF3 /* _hypno_.hypno.vector.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.vector.html; sourceTree = "<group>"; };
+		0D4990A92380C88100511BF3 /* _hypno_.hypno.timemapping.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.timemapping.html; sourceTree = "<group>"; };
+		0D4990AA2380C88100511BF3 /* _hypno_.hypno.coreimage.kernel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.coreimage.kernel.html; sourceTree = "<group>"; };
+		0D4990AC2380C88100511BF3 /* _hypno_.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.html; sourceTree = "<group>"; };
+		0D4990AD2380C88100511BF3 /* _hypno_.hypno.coreimage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.coreimage.html; sourceTree = "<group>"; };
+		0D4990AE2380C88100511BF3 /* _hypno_.hypno.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = _hypno_.hypno.html; sourceTree = "<group>"; };
+		0D4990B12380C88100511BF3 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
+		0D4990B32380C88100511BF3 /* icons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons@2x.png"; sourceTree = "<group>"; };
+		0D4990B42380C88100511BF3 /* widgets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widgets.png; sourceTree = "<group>"; };
+		0D4990B52380C88100511BF3 /* icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons.png; sourceTree = "<group>"; };
+		0D4990B62380C88100511BF3 /* widgets@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widgets@2x.png"; sourceTree = "<group>"; };
+		0D4990B82380C88100511BF3 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		0D4990B92380C88100511BF3 /* search.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = search.js; sourceTree = "<group>"; };
+		0D4990BA2380C88100511BF3 /* globals.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = globals.html; sourceTree = "<group>"; };
+		0D4990BB2380C88200511BF3 /* libhypno.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhypno.a; sourceTree = "<group>"; };
+		0D4990BC2380C88300511BF3 /* hypno_Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno_Platform.h; sourceTree = "<group>"; };
+		0D4990BD2380C88300511BF3 /* hypno_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno_Configuration.h; sourceTree = "<group>"; };
+		0D4990BE2380C88300511BF3 /* LICENSE.juce */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.juce; sourceTree = "<group>"; };
+		0D4990BF2380C88300511BF3 /* LICENSE_1_0.v8pp.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_1_0.v8pp.txt; sourceTree = "<group>"; };
+		0D4990C02380C88300511BF3 /* hypno_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hypno_Video.h; sourceTree = "<group>"; };
+		0D4990C12380C88300511BF3 /* LICENSE.v8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.v8; sourceTree = "<group>"; };
+		0D4990C22380C88300511BF3 /* COPYING.v8pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING.v8pp; sourceTree = "<group>"; };
+		0D4990C32380C88300511BF3 /* LICENSE.spdlog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.spdlog; sourceTree = "<group>"; };
+		0D4990E72380CA0500511BF3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0D4990E92380CA0C00511BF3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0D4990EB2380CA1600511BF3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		0D4990ED2380CA8400511BF3 /* Cordfm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cordfm-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D4990EE2380CA8400511BF3 /* hypno_Video.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = hypno_Video.mm; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Video.mm"; sourceTree = "<group>"; };
+		0D4990EF2380CA8400511BF3 /* hypno_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Video.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Video.h"; sourceTree = "<group>"; };
+		0D4990F02380CA8400511BF3 /* hypno_Platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = hypno_Platform.mm; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.mm"; sourceTree = "<group>"; };
+		0D4990F12380CA8400511BF3 /* hypno_Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hypno_Platform.h; path = "../../../../../d69336988f7def21e13a66a2b01e8a18-e028fa6e0c78f99d5bcb8a502d44f0832324841e/hypno_Platform.h"; sourceTree = "<group>"; };
+		7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.release.xcconfig"; sourceTree = "<group>"; };
+		A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cordfm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm.debug.xcconfig"; sourceTree = "<group>"; };
+		BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cordfm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D49907B2380C56100511BF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4990EC2380CA1600511BF3 /* CoreServices.framework in Frameworks */,
+				0D4990EA2380CA0C00511BF3 /* CoreMedia.framework in Frameworks */,
+				0D4990E82380CA0500511BF3 /* AVFoundation.framework in Frameworks */,
+				0D4990E02380C88300511BF3 /* libhypno.a in Frameworks */,
+				A0F8F94E50B0BFD67DE879E4 /* Pods_Cordfm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D4990752380C56100511BF3 = {
+			isa = PBXGroup;
+			children = (
+				0D4990802380C56100511BF3 /* Cordfm */,
+				0D49907F2380C56100511BF3 /* Products */,
+				0D4990952380C87900511BF3 /* Hypno */,
+				0D4990E62380CA0500511BF3 /* Frameworks */,
+				2EB5BEDFF2EC61B9207BE772 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0D49907F2380C56100511BF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D49907E2380C56100511BF3 /* Cordfm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D4990802380C56100511BF3 /* Cordfm */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990F12380CA8400511BF3 /* hypno_Platform.h */,
+				0D4990F02380CA8400511BF3 /* hypno_Platform.mm */,
+				0D4990EF2380CA8400511BF3 /* hypno_Video.h */,
+				0D4990EE2380CA8400511BF3 /* hypno_Video.mm */,
+				0D4990812380C56100511BF3 /* AppDelegate.swift */,
+				0D4990832380C56100511BF3 /* CreateController.swift */,
+				0D4990852380C56100511BF3 /* RenameController.swift */,
+				0D4990872380C56100511BF3 /* Main.storyboard */,
+				0D49908A2380C56400511BF3 /* Assets.xcassets */,
+				0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */,
+				0D49908F2380C56400511BF3 /* Info.plist */,
+				0D4990ED2380CA8400511BF3 /* Cordfm-Bridging-Header.h */,
+			);
+			path = Cordfm;
+			sourceTree = "<group>";
+		};
+		0D4990952380C87900511BF3 /* Hypno */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990C22380C88300511BF3 /* COPYING.v8pp */,
+				0D4990BD2380C88300511BF3 /* hypno_Configuration.h */,
+				0D4990BC2380C88300511BF3 /* hypno_Platform.h */,
+				0D4990C02380C88300511BF3 /* hypno_Video.h */,
+				0D4990962380C88100511BF3 /* hypno.h */,
+				0D4990BB2380C88200511BF3 /* libhypno.a */,
+				0D4990BF2380C88300511BF3 /* LICENSE_1_0.v8pp.txt */,
+				0D4990BE2380C88300511BF3 /* LICENSE.juce */,
+				0D4990C32380C88300511BF3 /* LICENSE.spdlog */,
+				0D4990C12380C88300511BF3 /* LICENSE.v8 */,
+				0D4990972380C88100511BF3 /* typedoc */,
+			);
+			path = Hypno;
+			sourceTree = "<group>";
+		};
+		0D4990972380C88100511BF3 /* typedoc */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990982380C88100511BF3 /* doc */,
+			);
+			path = typedoc;
+			sourceTree = "<group>";
+		};
+		0D4990982380C88100511BF3 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990992380C88100511BF3 /* index.html */,
+				0D49909A2380C88100511BF3 /* classes */,
+				0D4990AB2380C88100511BF3 /* modules */,
+				0D4990AF2380C88100511BF3 /* assets */,
+				0D4990BA2380C88100511BF3 /* globals.html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		0D49909A2380C88100511BF3 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D49909B2380C88100511BF3 /* _hypno_.hypno.time.html */,
+				0D49909C2380C88100511BF3 /* _hypno_.hypno.timerange.html */,
+				0D49909D2380C88100511BF3 /* _hypno_.hypno.coreimage.image.html */,
+				0D49909E2380C88100511BF3 /* _hypno_.hypno.blendmode.html */,
+				0D49909F2380C88100511BF3 /* _hypno_.hypno.color.html */,
+				0D4990A02380C88100511BF3 /* _hypno_.hypno.instruction.html */,
+				0D4990A12380C88100511BF3 /* _hypno_.hypno.transform.html */,
+				0D4990A22380C88100511BF3 /* _hypno_.hypno.coreimage.filter.html */,
+				0D4990A32380C88100511BF3 /* _hypno_.hypno.track.html */,
+				0D4990A42380C88100511BF3 /* _hypno_.hypno.composition.html */,
+				0D4990A52380C88100511BF3 /* _hypno_.hypno.context.html */,
+				0D4990A62380C88100511BF3 /* _hypno_.hypno.clip.html */,
+				0D4990A72380C88100511BF3 /* _hypno_.hypno.asset.html */,
+				0D4990A82380C88100511BF3 /* _hypno_.hypno.vector.html */,
+				0D4990A92380C88100511BF3 /* _hypno_.hypno.timemapping.html */,
+				0D4990AA2380C88100511BF3 /* _hypno_.hypno.coreimage.kernel.html */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		0D4990AB2380C88100511BF3 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990AC2380C88100511BF3 /* _hypno_.html */,
+				0D4990AD2380C88100511BF3 /* _hypno_.hypno.coreimage.html */,
+				0D4990AE2380C88100511BF3 /* _hypno_.hypno.html */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		0D4990AF2380C88100511BF3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990B02380C88100511BF3 /* css */,
+				0D4990B22380C88100511BF3 /* images */,
+				0D4990B72380C88100511BF3 /* js */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		0D4990B02380C88100511BF3 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990B12380C88100511BF3 /* main.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		0D4990B22380C88100511BF3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990B32380C88100511BF3 /* icons@2x.png */,
+				0D4990B42380C88100511BF3 /* widgets.png */,
+				0D4990B52380C88100511BF3 /* icons.png */,
+				0D4990B62380C88100511BF3 /* widgets@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		0D4990B72380C88100511BF3 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990B82380C88100511BF3 /* main.js */,
+				0D4990B92380C88100511BF3 /* search.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		0D4990E62380CA0500511BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D4990EB2380CA1600511BF3 /* CoreServices.framework */,
+				0D4990E92380CA0C00511BF3 /* CoreMedia.framework */,
+				0D4990E72380CA0500511BF3 /* AVFoundation.framework */,
+				BE367EB20559B8CE6742651A /* Pods_Cordfm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EB5BEDFF2EC61B9207BE772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */,
+				7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D49907D2380C56100511BF3 /* Cordfm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4990922380C56400511BF3 /* Build configuration list for PBXNativeTarget "Cordfm" */;
+			buildPhases = (
+				56728BDD14FE6E052F25409C /* [CP] Check Pods Manifest.lock */,
+				0D49907A2380C56100511BF3 /* Sources */,
+				0D49907B2380C56100511BF3 /* Frameworks */,
+				0D49907C2380C56100511BF3 /* Resources */,
+				E2915909837D43BCC51EB3EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cordfm;
+			productName = Cordfm;
+			productReference = 0D49907E2380C56100511BF3 /* Cordfm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D4990762380C56100511BF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Drew Patel";
+				TargetAttributes = {
+					0D49907D2380C56100511BF3 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = 0D4990792380C56100511BF3 /* Build configuration list for PBXProject "Cordfm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D4990752380C56100511BF3;
+			productRefGroup = 0D49907F2380C56100511BF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D49907D2380C56100511BF3 /* Cordfm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D49907C2380C56100511BF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4990CC2380C88300511BF3 /* _hypno_.hypno.coreimage.filter.html in Resources */,
+				0D4990D32380C88300511BF3 /* _hypno_.hypno.timemapping.html in Resources */,
+				0D49908E2380C56400511BF3 /* LaunchScreen.storyboard in Resources */,
+				0D4990E32380C88300511BF3 /* LICENSE.v8 in Resources */,
+				0D4990D72380C88300511BF3 /* _hypno_.hypno.html in Resources */,
+				0D4990E12380C88300511BF3 /* LICENSE.juce in Resources */,
+				0D4990D12380C88300511BF3 /* _hypno_.hypno.asset.html in Resources */,
+				0D4990C42380C88300511BF3 /* index.html in Resources */,
+				0D4990DC2380C88300511BF3 /* widgets@2x.png in Resources */,
+				0D4990E22380C88300511BF3 /* LICENSE_1_0.v8pp.txt in Resources */,
+				0D4990CD2380C88300511BF3 /* _hypno_.hypno.track.html in Resources */,
+				0D4990DD2380C88300511BF3 /* main.js in Resources */,
+				0D49908B2380C56400511BF3 /* Assets.xcassets in Resources */,
+				0D4990D62380C88300511BF3 /* _hypno_.hypno.coreimage.html in Resources */,
+				0D4990C52380C88300511BF3 /* _hypno_.hypno.time.html in Resources */,
+				0D4990C92380C88300511BF3 /* _hypno_.hypno.color.html in Resources */,
+				0D4990E42380C88300511BF3 /* COPYING.v8pp in Resources */,
+				0D4990D92380C88300511BF3 /* icons@2x.png in Resources */,
+				0D4990892380C56100511BF3 /* Main.storyboard in Resources */,
+				0D4990DF2380C88300511BF3 /* globals.html in Resources */,
+				0D4990D02380C88300511BF3 /* _hypno_.hypno.clip.html in Resources */,
+				0D4990D42380C88300511BF3 /* _hypno_.hypno.coreimage.kernel.html in Resources */,
+				0D4990D52380C88300511BF3 /* _hypno_.html in Resources */,
+				0D4990CF2380C88300511BF3 /* _hypno_.hypno.context.html in Resources */,
+				0D4990E52380C88300511BF3 /* LICENSE.spdlog in Resources */,
+				0D4990DB2380C88300511BF3 /* icons.png in Resources */,
+				0D4990C72380C88300511BF3 /* _hypno_.hypno.coreimage.image.html in Resources */,
+				0D4990CE2380C88300511BF3 /* _hypno_.hypno.composition.html in Resources */,
+				0D4990DA2380C88300511BF3 /* widgets.png in Resources */,
+				0D4990CA2380C88300511BF3 /* _hypno_.hypno.instruction.html in Resources */,
+				0D4990C62380C88300511BF3 /* _hypno_.hypno.timerange.html in Resources */,
+				0D4990D82380C88300511BF3 /* main.css in Resources */,
+				0D4990CB2380C88300511BF3 /* _hypno_.hypno.transform.html in Resources */,
+				0D4990C82380C88300511BF3 /* _hypno_.hypno.blendmode.html in Resources */,
+				0D4990DE2380C88300511BF3 /* search.js in Resources */,
+				0D4990D22380C88300511BF3 /* _hypno_.hypno.vector.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56728BDD14FE6E052F25409C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cordfm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2915909837D43BCC51EB3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cordfm/Pods-Cordfm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D49907A2380C56100511BF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4990F32380CA8400511BF3 /* hypno_Platform.mm in Sources */,
+				0D4990862380C56100511BF3 /* RenameController.swift in Sources */,
+				0D4990822380C56100511BF3 /* AppDelegate.swift in Sources */,
+				0D4990F22380CA8400511BF3 /* hypno_Video.mm in Sources */,
+				0D4990842380C56100511BF3 /* CreateController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D4990872380C56100511BF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4990882380C56100511BF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D49908C2380C56400511BF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D49908D2380C56400511BF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D4990902380C56400511BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D4990912380C56400511BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D4990932380C56400511BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A313A3E4546E1BA9646D8F71 /* Pods-Cordfm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Hypno";
+				INFOPLIST_FILE = Cordfm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hypno",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.Cordfm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cordfm/Cordfm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D4990942380C56400511BF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F29281B99050316854F08B1 /* Pods-Cordfm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Hypno";
+				INFOPLIST_FILE = Cordfm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hypno",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.Cordfm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cordfm/Cordfm-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D4990792380C56100511BF3 /* Build configuration list for PBXProject "Cordfm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4990902380C56400511BF3 /* Debug */,
+				0D4990912380C56400511BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4990922380C56400511BF3 /* Build configuration list for PBXNativeTarget "Cordfm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4990932380C56400511BF3 /* Debug */,
+				0D4990942380C56400511BF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D4990762380C56100511BF3 /* Project object */;
+}

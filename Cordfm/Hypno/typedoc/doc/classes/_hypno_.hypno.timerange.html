@@ -1,0 +1,471 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TimeRange | </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_hypno_.html">&quot;hypno&quot;</a>
+				</li>
+				<li>
+					<a href="../modules/_hypno_.hypno.html">hypno</a>
+				</li>
+				<li>
+					<a href="_hypno_.hypno.timerange.html">TimeRange</a>
+				</li>
+			</ul>
+			<h1>Class TimeRange</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Representing a range of time.</p>
+					</div>
+					<p>TimeRange objects are non-opaque mutable structures that represent time
+						ranges. A TimeRange object is represented as two Time objects, one that
+						specifies the start time of the range and another that specifies the
+						duration of the range. A time range does not include the end time that
+						would be calculated by adding the duration to the start time. The
+					following expression will always evaluate to false:</p>
+					<pre><code class="language-javascript">TimeRange.containsTime (range, TimeRange.getEnd (range));</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TimeRange</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_hypno_.hypno.timerange.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_hypno_.hypno.timerange.html#duration" class="tsd-kind-icon">duration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_hypno_.hypno.timerange.html#start" class="tsd-kind-icon">start</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_hypno_.hypno.timerange.html#getintersection" class="tsd-kind-icon">get<wbr>Intersection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_hypno_.hypno.timerange.html#getunion" class="tsd-kind-icon">get<wbr>Union</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Time<wbr>Range<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a>, duration<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/HYPERHYPER/libhypno/blob/faab3f0/hypno.ts#L791">hypno.ts:791</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a valid TimeRange with the given start time and duration.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a></h5>
+								</li>
+								<li>
+									<h5>duration: <a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="duration" class="tsd-anchor"></a>
+					<h3>duration</h3>
+					<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/HYPERHYPER/libhypno/blob/faab3f0/hypno.ts#L805">hypno.ts:805</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets or sets the duration of the time range.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="_hypno_.hypno.time.html" class="tsd-signature-type">Time</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/HYPERHYPER/libhypno/blob/faab3f0/hypno.ts#L800">hypno.ts:800</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets or sets the start time of the time range.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getintersection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Intersection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Intersection<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a>, otherRange<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/HYPERHYPER/libhypno/blob/faab3f0/hypno.ts#L821">hypno.ts:821</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the intersection of two TimeRanges.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>TimeRange to be intersected.</p>
+									</div>
+								</li>
+								<li>
+									<h5>otherRange: <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Another TimeRange to be intersected.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getunion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Union</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Union<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a>, otherRange<span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/HYPERHYPER/libhypno/blob/faab3f0/hypno.ts#L813">hypno.ts:813</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the union of two TimeRanges.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>TimeRange to be unified.</p>
+									</div>
+								</li>
+								<li>
+									<h5>otherRange: <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Another TimeRange to be unified.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_hypno_.hypno.timerange.html" class="tsd-signature-type">TimeRange</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.asset.html" class="tsd-kind-icon">Asset</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.blendmode.html" class="tsd-kind-icon">Blend<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.clip.html" class="tsd-kind-icon">Clip</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.composition.html" class="tsd-kind-icon">Composition</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.context.html" class="tsd-kind-icon">Context</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.instruction.html" class="tsd-kind-icon">Instruction</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.time.html" class="tsd-kind-icon">Time</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.timemapping.html" class="tsd-kind-icon">Time<wbr>Mapping</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.timerange.html" class="tsd-kind-icon">Time<wbr>Range</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_hypno_.hypno.timerange.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_hypno_.hypno.timerange.html#duration" class="tsd-kind-icon">duration</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_hypno_.hypno.timerange.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_hypno_.hypno.timerange.html#getintersection" class="tsd-kind-icon">get<wbr>Intersection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_hypno_.hypno.timerange.html#getunion" class="tsd-kind-icon">get<wbr>Union</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.track.html" class="tsd-kind-icon">Track</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.transform.html" class="tsd-kind-icon">Transform</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="_hypno_.hypno.vector.html" class="tsd-kind-icon">Vector</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#os" class="tsd-kind-icon">OS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264baseline30" class="tsd-kind-icon">H264<wbr>Baseline30</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264baseline31" class="tsd-kind-icon">H264<wbr>Baseline31</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264baseline41" class="tsd-kind-icon">H264<wbr>Baseline41</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264baselineauto" class="tsd-kind-icon">H264<wbr>Baseline<wbr>Auto</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264high40" class="tsd-kind-icon">H264<wbr>High40</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264high41" class="tsd-kind-icon">H264<wbr>High41</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264high51" class="tsd-kind-icon">H264<wbr>High51</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264highauto" class="tsd-kind-icon">H264<wbr>High<wbr>Auto</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264main30" class="tsd-kind-icon">H264<wbr>Main30</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264main31" class="tsd-kind-icon">H264<wbr>Main31</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264main32" class="tsd-kind-icon">H264<wbr>Main32</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264main41" class="tsd-kind-icon">H264<wbr>Main41</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#h264mainauto" class="tsd-kind-icon">H264<wbr>Main<wbr>Auto</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#argv" class="tsd-kind-icon">argv</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#audio" class="tsd-kind-icon">audio</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#ios" class="tsd-kind-icon">iOS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#macos" class="tsd-kind-icon">macOS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#os-1" class="tsd-kind-icon">os</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/_hypno_.hypno.html#video" class="tsd-kind-icon">video</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
