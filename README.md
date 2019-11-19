@@ -1,2 +1,2 @@
-# CordFM
+# Chord
  
